@@ -35,32 +35,32 @@ Zero-Shot Prompting for SST:
 `python run_llama.py --option prompt --batch_size 10  --train data/sst-train.txt --dev data/sst-dev.txt --test data/sst-test.txt --label-names data/sst-label-mapping.json --dev_out sst-dev-prompting-output.txt --test_out sst-test-prompting-output.txt [--use_gpu]`
 
 Prompting for SST:
-Dev Accuracy: 0.213
-Test Accuracy: 0.224
+Dev Accuracy: 0.213 (0.213)
+Test Accuracy: 0.224 (0.224)
 
 Zero-Shot Prompting for CFIMDB:
 
 `python run_llama.py --option prompt --batch_size 10  --train data/cfimdb-train.txt --dev data/cfimdb-dev.txt --test data/cfimdb-test.txt --label-names data/cfimdb-label-mapping.json --dev_out cfimdb-dev-prompting-output.txt --test_out cfimdb-test-prompting-output.txt [--use_gpu]`
 
 Prompting for CFIMDB:
-Dev Accuracy: 0.498
-Test Accuracy: -
+Dev Accuracy: 0.498 (0.502)
+Test Accuracy: - (0.213)
 
 *Classification Finetuning*
 
 `python run_llama.py --option finetune --epochs 5 --lr 2e-5 --batch_size 80  --train data/sst-train.txt --dev data/sst-dev.txt --test data/sst-test.txt --label-names data/sst-label-mapping.json --dev_out sst-dev-finetuning-output.txt --test_out sst-test-finetuning-output.txt [--use_gpu]`
 
 Finetuning for SST:
-Dev Accuracy: 0.414
-Test Accuracy: 0.418
+Dev Accuracy: 0.414 (0.414)
+Test Accuracy: 0.418 (0.418)
 
 `python run_llama.py --option finetune --epochs 5 --lr 2e-5 --batch_size 10  --train data/cfimdb-train.txt --dev data/cfimdb-dev.txt --test data/cfimdb-test.txt --label-names data/cfimdb-label-mapping.json --dev_out cfimdb-dev-finetuning-output.txt --test_out cfimdb-test-finetuning-output.txt [--use_gpu]`
 
 Finetuning for CFIMDB:
-Dev Accuracy: 0.800
-Test Accuracy: -
+Dev Accuracy: 0.800 (0.820)
+Test Accuracy: - (0.482)
 
-Mean reference accuracies over 10 random seeds with their standard deviation shown in brackets.
+The above is mean reference accuracies over 10 random seeds with my accuracies shown in brackets.
 
 ### Submission
 
