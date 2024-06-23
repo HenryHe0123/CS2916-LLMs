@@ -1,0 +1,6 @@
+[submodule "hw2/mini-lima"]
+	path = hw2/mini-lima
+	url = git@github.com:LLM-class-group/mini-lima.git
+[submodule "hw34/Multimodal-Learning"]
+	path = hw34/Multimodal-Learning
+	url = git@github.com:LLM-class-group/Multimodal-Learning.git
